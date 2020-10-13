@@ -20,6 +20,10 @@ body {
     color: #212529
 }
 
+h1 {
+    margin-bottom: 40px;
+}
+
 h2 {
     width: 100%;
     margin-bottom: 20px;
@@ -73,6 +77,7 @@ h2 {
 .text {
     padding: 10px;
 }
+/*Стилизация главной страницы*/
 /*Стилизация шапки и меню*/
 .menu-logo {
     width: 15%;
@@ -142,4 +147,24 @@ h2 {
     justify-content: space-around;
     width: 100%;
 }
-/*Стилизация подвала*/
+/*Стилизация формы входа*/
+
+.log-in-form {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.log-in-form h1 {
+    margin: 0 auto;
+}
+
+.log-in-form-item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.log-in-form a {
+    color: blue;
+}
