@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+        font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529
+}
+
+input {
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1140px;
+    margin: 0 auto;
+}
+.menu {
+    display: flex;    
+}
+
+.menu-logo img {
+    width: 200px;
+    height: auto;
+}
+
+.menu-nav {
+    display: flex;
+    list-style: none;
+}
+
+.menu-nav li{
+    margin: 20px 10px;
+}
+
+.menu-nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.flight-search-heading {
+    font-size: 30px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.flight-search-form {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.flight-search-form input, .flight-search-form select {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.largest-input {
+    width: 22%;
+}
+
+.flight-search-button {
+    margin: auto 0;
+    height: 30px;
+    padding: 5px;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.promotions {
+    margin-top: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.card-item {
+    width: 23%;
+    height: 350px;
+    border: 1px grey solid;
+    border-radius: 5px;
+}
+
+.card-item-bg {
+    width: 100%;
+}
+
+.card-item-discription {
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card-item button {
+    width: 75px;
+    padding: 5px 20px;
+}
+
+.subscribe {
+    margin-top: 40px;
+}
+
+.subscribe h2 {
+    width: 100%;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.subscribe-form input {
+    width: 49%;
+    padding: 5px 0;
+}
+
+.subscribe-form button {
+    width: 49%;
+    padding: 5px 0;
+    background-color: #28a745;
+    border-color: #28a745;
+}
