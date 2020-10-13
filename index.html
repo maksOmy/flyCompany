@@ -3,88 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>FlightPool</title>
 </head>
 <body>
-    <div class="menu container">
+    <div class="menu">
+        <div class="container">
             <a class="menu-logo" href="#"><img src="images/logo.png" alt="FlightPool"></a>
-        <ul class="menu-nav">
-            <li class="test-0-nav-1"><a href="#">Promotions</a></li>
-            <li class="test-0-nav-2"><a href="#">Search</a></li>    
-            <li class="test-0-nav-3"><a href="#">Check-in</a></li>
-            <li class="test-0-nav-4"><a href="#">Personal area</a></li>              
-        </ul>     
+            <div class="menu-nav nav">
+                <a href="#">Promotions</a>
+                <a href="#">Search</a>
+                <a href="#">Check-in</a>
+                <a href="#">Personal area</a>
+            </div>
+        </div>   
     </div>
-    <div class="flight-search container">
-        <h2>Flight search</h2>
-        <form class="flight-search-form">
-            <input type="text" placeholder="From where" class="largest-input">
-            <input type="text" placeholder="To where" class="largest-input">
-            <input type="text" placeholder="Departing" class="">
-            <input type="text" placeholder="Returning" class="">
-            <select>
-                <option selected>1</option>
-                <option>2</option>
-            </select>
-            <button class="flight-search-button" type="submit">Search</button> 
-        </form>
-    </div>
-    <section class="promotions container">
-        <h2>Promotions</h2>
-        <div class="cards">
-            <form class="card-item">
-                <img class="card-item-bg" src="images/Road-Trip.jpg" >
-                <div class="card-item-discription">
-                    <h3>Promotion 1</h3>
-                    <p>promotion text</p>
-                    <button>More</button>
-                </div>                
+    <div class="search">
+        <div class="container">
+            <h2>Flight search</h2>
+            <form class="search-form">
+                <input type="text" placeholder="From where" class="text border l">
+                <input type="text" placeholder="To where" class="text border l">
+                <input type="text" placeholder="Departing" class="text border m">
+                <input type="text" placeholder="Returning" class="text border m">
+                <select class="text border s">
+                    <option selected>1</option>
+                    <option>2</option>
+                </select>
+                <button class="btn submit border s" type="submit">Search</button> 
             </form>
-            <form class="card-item">
-                <img class="card-item-bg" src="images/Road-Trip.jpg" >
-                <div class="card-item-discription">
-                    <h3>Promotion 1</h3>
-                    <p>promotion text</p>
-                    <button>More</button>
-            </div>                
-            </form>  
-            <form class="card-item">
-                <img class="card-item-bg" src="images/Road-Trip.jpg">
-                <div class="card-item-discription">
-                    <h3>Promotion 1</h3>
-                    <p>promotion text</p>
-                    <button>More</button>
-                </div>                
-            </form>  
-            <form class="card-item">
-                <img class="card-item-bg" src="images/Road-Trip.jpg">
-                <div class="card-item-discription">
-                    <h3>Promotion 1</h3>
-                    <p>promotion text</p>
-                    <button>More</button>
-                </div>                
-            </form>     
         </div>
-    </section>
-    <section class="subscribe container">
-        <h2>Subscribe</h2>
-        <form class="subscribe-form">
-            <input type="text" placeholder="example@domain.com">
-            <button type="submit">Subscribe</button>
-        </form>
-    </section>
-    <footer class="container">
-        <b>8-800-5555</b>
-        <ul class="menu-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Log in</a></li>
-            <li><a href="#">Registration</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Return</a></li>
-            <li><a href="#">Feedback</a></li>
-        </ul>
-    </footer>
+    </div>
+    
+    <div class="promotions">
+        <div class="container">
+            <h2>Promotions</h2>
+            <div class="cards">
+                <form class="card-item border">
+                    <img class="card-item-bg" src="images/Road-Trip.jpg" >
+                    <div class="card-item-discription">
+                        <h3>Promotion 1</h3>
+                        <p>promotion text</p>
+                        <button class="btn border xl">More</button>
+                    </div>                
+                </form>
+                <form class="card-item border">
+                    <img class="card-item-bg" src="images/Road-Trip.jpg" >
+                    <div class="card-item-discription">
+                        <h3>Promotion 1</h3>
+                        <p>promotion text</p>
+                        <button class="btn border xl">More</button>
+                    </div>                
+                </form>
+                <form class="card-item border">
+                    <img class="card-item-bg" src="images/Road-Trip.jpg" >
+                    <div class="card-item-discription">
+                        <h3>Promotion 1</h3>
+                        <p>promotion text</p>
+                        <button class="btn border xl">More</button>
+                    </div>                
+                </form>
+                <form class="card-item border">
+                    <img class="card-item-bg" src="images/Road-Trip.jpg" >
+                    <div class="card-item-discription">
+                        <h3>Promotion 1</h3>
+                        <p>promotion text</p>
+                        <button class="btn border xl">More</button>
+                    </div>                
+                </form>
+            </div>
+        </div>    
+    </div>
+    <div class="subscribe">
+        <div class="container">
+            <h2>Subscribe</h2>
+            <form class="subscribe-form">
+                <input class="text border xl" type="text" placeholder="example@domain.com">
+                <button class="btn border xl" type="submit">Subscribe</button>
+            </form>
+        </div>        
+    </div>
+    <div class="footer">
+        <div class="container">
+        <span>8-800-5555</span>
+        <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">Log in</a>
+                <a href="#">Registration</a>
+                <a href="#">Contact</a>
+                <a href="#">News</a>
+                <a href="#">Return</a>
+                <a href="#">Feedback</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
