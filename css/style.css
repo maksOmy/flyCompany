@@ -140,14 +140,17 @@ h2 {
     padding: 20px;
     padding-top: 0;
 }
+
 /*Стилизация блока подписки*/
+
 .subscribe-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
 }
-/*Стилизация формы входа*/
+
+/*Стилизация форм входа и регистрации*/
 
 .log-in-form {
     display: flex;    
