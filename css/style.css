@@ -153,21 +153,33 @@ h2 {
 /*Стилизация форм входа и регистрации*/
 
 .log-in-form {
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 50%;
     margin: 0 auto;
 }
 
 .log-in-form h1 {
+    width: 100%;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .log-in-form-item {
-    width: 100%;
-    margin-bottom: 20px;
+    width: 48%;
+    margin: 10px;
+    margin-right: 0;
 }
 
 .log-in-form a {
     color: blue;
+}
+
+.form-button {
+    width: 100%;
+}
+
+.log-in-form p {
+    margin: 0 auto;
 }
