@@ -11,9 +11,14 @@ a {
     color: #000;
 }
 
+a[class] {
+    padding: 8px;
+    text-align: center;
+}
+
 body {
     min-height: 100vh;
-        font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -27,6 +32,7 @@ h1 {
 h2 {
     width: 100%;
     margin-bottom: 20px;
+    font-weight: 400;
 }
 
 .container {
@@ -74,6 +80,7 @@ th, td {
 
 .btn {
     background-color: #218838;
+    opacity: 0.7;
     border-color: #1e7e34;
 
     color: #fff;
@@ -82,9 +89,61 @@ th, td {
     height: 39px;
 }
 
+.btn:hover {
+    opacity: 1;
+}
+
 .text {
     padding: 10px;
 }
+
+/*Базовая стилизация таблиц*/
+
+table {
+    display: grid;
+    border-collapse: collapse;
+    border: 1px silver solid;
+    min-width: 100%;    
+  }
+  
+  thead,
+  tbody,
+  tr {
+    display: contents;
+  }
+  
+  th,
+  td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-right: 1px silver solid;
+  }
+  
+  th {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.1rem;
+  }
+  
+  th:last-child, td:last-child {
+    border: 0;
+  }
+  
+  td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #808080;
+  }
+  
+  tr:nth-child(even) td {
+    background: #ffffff;
+  }
+
 /*Стилизация главной страницы*/
 /*Стилизация шапки и меню*/
 .menu-logo {
@@ -102,7 +161,6 @@ th, td {
     justify-content: space-around;
     width: 55%;
     margin: auto 0;
-    text-transform: uppercase;
 }
 .menu {
     background-color: rgba(205,205,205,.5);
@@ -190,4 +248,33 @@ th, td {
 
 .log-in-form p {
     margin: 0 auto;
+}
+
+/*Стилизация страницы search*/
+
+.search-nav {
+    width: 100%;
+
+    margin: 40px 0;
+}
+
+.btn-back {
+    background: #8C959D;
+    min-width: 7%;
+}
+
+.search-table {
+    grid-template-columns: 
+      minmax(100px, 0.8fr)
+      minmax(100px, 1fr)
+      minmax(100px, 2fr)
+      minmax(100px, 1fr)
+      minmax(100px, 1fr)
+      minmax(100px, 0.5fr);
+    margin-bottom: 30px;
+}
+
+.btn-search {
+    min-width: 10%;
+    background-color: blue;
 }
