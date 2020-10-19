@@ -390,21 +390,20 @@ table {
 .booking-table {
     grid-template-columns: 
       minmax(100px, 0.8fr)
+      minmax(100px, 1.2fr)
       minmax(100px, 1fr)
-      minmax(100px, 1fr)
-      minmax(100px, 2fr)
+      minmax(100px, 1.6fr)
       minmax(100px, 1fr)
       minmax(100px, 1fr)
       minmax(100px, 1fr);
     margin-bottom: 30px;
-    border: none;
-    
+   
 }
 
-.booking-table td, th {
+.booking-table td {
     border-collapse: collapse;
     background: #ffffff;
-    border: 1px grey solid;
+    border-top: 1px grey solid;
 }
 
 .passangers-info {
@@ -417,6 +416,41 @@ table {
     margin-bottom: 30px;
 }
 
+/*Стилизация страницы информации о рейсе*/
 
+.info-table {
+    grid-template-columns:  
+    minmax(100px, 0.7fr)
+    minmax(100px, 1fr)
+    minmax(100px, 1fr)
+    minmax(100px, 1fr)
+    minmax(100px, 0.5fr)
+    minmax(100px, 0.5fr);
+}
 
+.info-table td {
+    border-collapse: collapse;
+    background: #ffffff;
+    border-top: 1px grey solid;
+}
 
+.cost {
+    grid-column: span 5;
+    text-align: end;
+}
+
+.header-form {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.search-form button {
+    background-color: red;
+    border-color: red;
+}
+
+.booking-submit {
+    width: 100%;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="profile-header container">
+        <h1>Booking</h1>              
+        <a class="logout-btn btn border s" href="index.html">Back</a>
+    </header>
+    <main class="container">
+        <table class="info-table">
+            <h3>Flight information</h3>
+            <thead>
+                <th>Flight</th>
+                <th>From where</th>
+                <th>Date and time of departure</th>
+                <th>To where</th>
+                <th>Flight time</th>
+                <th>Cost</th>
+            </thead>       
+            <tbody>
+                <tr>
+                    <td>FC 2144</td>
+                    <td>Kazan, International airport</td>
+                    <td>10-09-2020 at 08:00</td>
+                    <td>Moscow, Sherementievo</td>
+                    <td>09:30</td>
+                    <td>8000</td>
+                </tr>
+                <tr>
+                    <td>FC 2161</td>
+                    <td>Moscow, Sherementievo</td>
+                    <td>20-09-2020 at 10:00</td>
+                    <td>Kazan, International airport</td>
+                    <td>11:30</td>
+                    <td>9000</td>
+                </tr>
+                <tr>
+                    <td class="cost">Total cost</td>
+                    <td>16000</td>
+                </tr>             
+            </tbody>
+        </table>
+        <section class="container">
+            <div class="header-form">
+                <h2>Passengers</h2>
+                <button class="btn submit border m" type="submit">Add passengers</button>
+            </div>
+            
+            <form class="search-form">
+                <input type="text" placeholder="First name" class="text border l">
+                <input type="text" placeholder="Last name" class="text border l">
+                <input type="text" placeholder="Date of Birth" class="text border m">
+                <input type="text" placeholder="Document number" class="text border m">
+                <button class="btn submit border m" type="submit">Remove</button> 
+            </form>
+        </section>
+        <button class="booking-submit btn border">Confirm</button>
+    </main>
+</body>
+</html>
