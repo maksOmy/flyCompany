@@ -278,3 +278,60 @@ table {
     min-width: 10%;
     background-color: blue;
 }
+
+/*Стилизация страницы бронирования*/
+
+.seat-form {
+    width: 40%;
+}
+
+.seat-table {
+    grid-template-columns: 
+    minmax(100px, 1fr)
+    minmax(100px, 1fr)
+    minmax(100px, 1.3fr);
+    margin-bottom: 20px;
+}
+
+.select-btn {
+    margin-left: 20px;
+}
+
+.seat-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.seat-schema {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.seat {
+    text-align: center;
+    width: 30px;
+    height: 24px;
+}
+
+.left-select-container {
+    display: flex;
+    margin-right: 15px;
+}
+
+.right-select-container {
+    display: flex;
+    margin-left: 15px;
+}
+
+.seat-select {
+    background-color: silver;
+    margin: 1px;
+    border: 1px grey solid;
+}
+
+.seat-selected {
+    background-color: greenyellow;
+}
