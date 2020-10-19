@@ -385,5 +385,38 @@ table {
     color: blue;
 }
 
+/*Стилизация страницы информации о рейсе*/
+
+.booking-table {
+    grid-template-columns: 
+      minmax(100px, 0.8fr)
+      minmax(100px, 1fr)
+      minmax(100px, 1fr)
+      minmax(100px, 2fr)
+      minmax(100px, 1fr)
+      minmax(100px, 1fr)
+      minmax(100px, 1fr);
+    margin-bottom: 30px;
+    border: none;
+    
+}
+
+.booking-table td, th {
+    border-collapse: collapse;
+    background: #ffffff;
+    border: 1px grey solid;
+}
+
+.passangers-info {
+    grid-template-columns: 
+      minmax(100px, 1fr)
+      minmax(100px, 1fr)
+      minmax(100px, 1fr)
+      minmax(100px, 1fr)
+      minmax(100px, 1fr);
+    margin-bottom: 30px;
+}
+
+
 
 
