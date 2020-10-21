@@ -36,6 +36,7 @@ h2 {
 }
 
 .container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -220,11 +221,15 @@ table {
 /*Стилизация форм входа и регистрации*/
 
 .log-in-form {
-    display: flex;
+    content: "";
+    position: absolute;
+    
+    display: none;
     flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
-    width: 50%;
-    margin: 0 auto;
+    height: 100%;
+    width: 100%;
 }
 
 .log-in-form h1 {
