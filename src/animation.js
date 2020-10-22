@@ -18,9 +18,6 @@ const animate = ({timing, draw, duration}) => {
 
 //popup-form animate
 
-const logInBtn = document.getElementById('log-in-btn');
-const popUpLogin = document.querySelector('.log-in-form');
-
 const animatePopup = (popupForm) => {
     animate({
         timing(timeFraction) {
@@ -40,9 +37,16 @@ const animatePopup = (popupForm) => {
     });
 };
 
+const logInBtn = document.getElementById('log-in-btn');
+const popUpLogin = document.querySelector('.log-in-form');
+const logInLink = document.getElementById('log-in-link');
+
 logInBtn.addEventListener('click', () => { animatePopup(popUpLogin); }, false);
+logInLink.addEventListener('click', () => { animatePopup(popUpLogin); }, false);
 
 const signUpBtn = document.getElementById('sign-up-btn');
 const popUpSignUp = document.querySelector('.sign-up-form');
+const signUpLink = document.getElementById('sign-up-link');
 
 signUpBtn.addEventListener('click', () => { animatePopup(popUpSignUp); }, false);
+signUpLink.addEventListener('click', () => { animatePopup(popUpSignUp); }, false);
