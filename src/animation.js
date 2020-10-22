@@ -1,4 +1,4 @@
-const popUpAnimate = ({timing, draw, duration}) => {
+const animate = ({timing, draw, duration}) => {
     let start = performance.now();
 
     requestAnimationFrame(function animate(time) {
@@ -16,20 +16,33 @@ const popUpAnimate = ({timing, draw, duration}) => {
     });
 };
 
-const logInBtn = document.querySelector('.log-in-btn');
-const mainContainer = document.body;
+//popup-form animate
 
-logInBtn.addEventListener('click', () => {
-    const popUp = document.querySelector('.log-in-form');
-    popUpAnimate({
+const logInBtn = document.getElementById('log-in-btn');
+const popUpLogin = document.querySelector('.log-in-form');
+
+const animatePopup = (popupForm) => {
+    animate({
         timing(timeFraction) {
             return timeFraction;
           },
         draw(progress) {
-            popUp.style.background = 'rgba(0, 0, 0, 0.5)';
-            popUp.style.display = 'flex';
-            popUp.style.top = (-700 + progress * 1000) + 'px';
+            const container = popupForm.closest('.popup-container');
+            container.addEventListener('click', () => {
+                container.classList.remove('overlay');
+                popupForm.style.display = 'none';
+            });
+            container.classList.add('overlay');
+            popupForm.style.display = 'flex';
+            popupForm.style.top = `${(-700 + progress * 1000)}px`;
         },
         duration: 1500
     });
-});
+};
+
+logInBtn.addEventListener('click', () => { animatePopup(popUpLogin); }, false);
+
+const signUpBtn = document.getElementById('sign-up-btn');
+const popUpSignUp = document.querySelector('.sign-up-form');
+
+signUpBtn.addEventListener('click', () => { animatePopup(popUpSignUp); }, false);

@@ -17,6 +17,8 @@ a[class] {
 }
 
 body {
+    position: relative;
+
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
@@ -36,7 +38,6 @@ h2 {
 }
 
 .container {
-    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -96,6 +97,17 @@ th, td {
 
 .text {
     padding: 10px;
+}
+
+.overlay {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
 
 /*Базовая стилизация таблиц*/
@@ -220,40 +232,59 @@ table {
 
 /*Стилизация форм входа и регистрации*/
 
-.log-in-form {
+.popup-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.popup-form {
     content: "";
     position: absolute;
     
     display: none;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    height: 100%;
-    width: 100%;
+
+    padding: 10px;
+    background-color: #fff;
 }
 
-.log-in-form h1 {
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 40px;
+.log-in-form {
+    height: 35%;
+    width: 25%;        
 }
 
-.log-in-form-item {
+.sign-up-form {
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    
+    width: 40%;
+    height: 45%;
+}
+
+.popup-form h1 {
+    margin-bottom: 20px;
+}
+
+.popup-form-item {
     width: 48%;
     margin: 10px;
     margin-right: 0;
 }
 
-.log-in-form a {
-    color: blue;
+.log-in-form-item {
+    width: 80%;
 }
 
-.form-button {
+.sign-up-thead {
     width: 100%;
 }
 
-.log-in-form p {
-    margin: 0 auto;
+.popup-form a {
+    color: blue;
 }
 
 /*Стилизация страницы search*/
